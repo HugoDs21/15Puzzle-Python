@@ -122,6 +122,7 @@ def bfs(inicialState, goalstate):
         for filho in state.moves():
             total_nos += 1
             fronteira.append(filho)
+        del(state);
     return False, total_nos
 
 # Depth-first search
@@ -143,6 +144,7 @@ def dfs(inicialState, goalstate, depth):
             if filho.profundidade <= depth:
                 if filho not in visitados or filho not in fronteira:
                     fronteira.append(filho)
+        del(state)
     return False, total_nos
 
 # Iteractive Depth-first search
