@@ -1,8 +1,8 @@
 #! /usr/bin/env python3
 import sys
 import argparse
-from tabuleiro import Tabuleiro
-from pesquisas import bfs, dfs, idfs, astar, guloso, hamming, manhattan
+from Class import Tabuleiro
+from Functions import bfs, dfs, idfs, astar, guloso, hamming, manhattan
 
 
 def main():

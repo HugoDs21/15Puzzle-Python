@@ -18,15 +18,14 @@ class Tabuleiro:
         return Tabuleiro(self.estado)
 
     def __str__(self):
-        text = """┌──┬──┬──┬──┐
-│{}│{}│{}│{}│
-├──┼──┼──┼──┤
-│{}│{}│{}│{}│
-├──┼──┼──┼──┤
-│{}│{}│{}│{}│
-├──┼──┼──┼──┤
-│{}│{}│{}│{}│
-└──┴──┴──┴──┘""" \
+        text = """
+{} {} {} {}
+
+{} {} {} {}
+
+{} {} {} {}
+
+{} {} {} {}""" \
             .format(self.estado[0].rjust(2, '0'), self.estado[1].rjust(2, '0'), self.estado[2].rjust(2, '0'),
                     self.estado[3].rjust(2, '0'),
                     self.estado[4].rjust(2, '0'), self.estado[5].rjust(2, '0'), self.estado[6].rjust(2, '0'),
@@ -135,4 +134,3 @@ class Tabuleiro:
         if last != "Up":
             self._down()
         return self.filhos
-
