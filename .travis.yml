@@ -11,4 +11,4 @@ matrix:
       sudo: true
 
 script:
-  python3 Puzzle.py
+  python3 Puzzle.py --a 2 -i depth4 
