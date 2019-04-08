@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/xPudimx/15Puzzle-Python.svg?branch=master)](https://travis-ci.com/xPudimx/15Puzzle-Python)
 # Problem 
 The game of 15 is represented by a 4x4 matrix where there are 15 numbered cells and a white cell.
 
